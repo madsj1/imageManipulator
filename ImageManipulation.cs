@@ -25,7 +25,7 @@ namespace WindowsFormsApp1
                 {
                     theColor = bmap.GetPixel(i, j);
 
-                    Color newColor = Color.FromArgb(theColor.R, theColor.B, 0);
+                    Color newColor = Color.FromArgb(theColor.R, theColor.G, 0);
 
                     bmap.SetPixel(i, j, newColor);
                 }

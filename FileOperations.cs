@@ -17,7 +17,7 @@ namespace WindowsFormsApp1
             OpenFileDialog ofd = new OpenFileDialog();
 
             ofd.InitialDirectory = "C:\\Images";
-            ofd.Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF|All files (*.*)|*.*";
+            ofd.Filter = "Image Files(*.BMP;*.JPG;*.GIF;*.PNG)|*.BMP;*.JPG;*.GIF;*.PNG|All files (*.*)|*.*";
             if (ofd.ShowDialog() == DialogResult.OK)
             {
                 newImage = new Bitmap(Image.FromFile(ofd.FileName)); 
